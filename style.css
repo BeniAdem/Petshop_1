@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#f0dbdb ;
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+}
+.fixbanner{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.fixbanner img{
+    height: 40px;
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.maincontainer{
+    background-color: white;
+    border-radius: 50px;
+    width: 65%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.topbanner{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid;*/
+    align-items: center;
+    height: 60px;
+    margin-top: 10px;
+ 
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.ara{
+    width: 400px;
+    text-align: center;
+
+}
+.ara input{
+    padding-left: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #834d9b;
+    color: #834d9b;
+    font-size: 15px;
+    font-weight: 600;
+
+    outline: none;
+}
+.ara input::placeholder{
+
+    color: #834d9b;
+}
+
+.toprightbanner{
+    display: flex;
+    gap: 10px;
+}
+.menu{
+    margin-top: 20px;
+}
+
+nav > ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav > ul > li{
+    text-align: center;
+    width: 246px;
+    height: 50px;
+    transition: all 0.3s ease;
+    font-size: larger;
+    font-weight: 700;
+    border-left: solid 1px  #f0dbdb;
+    border-right: solid 1px  #f0dbdb;
+    border-radius: 30px 30px 0 0px;
+
+}
+
+nav > ul > li > a{
+    color: #834d9b;
+
+}
+.fa-chevron-down{
+    top: 30px;
+    left: 50%;
+    transition: all 0.5s ease;
+}
+
+ .ikon{
+    top: 10px;
+    left: 50%;
+    height: 28px;
+    display: none;
+    transition: all 0.5s ease;
+    margin-top: -8px;
+}
+
+nav > ul > li:hover{
+    background-color: #f0dbdb;
+    box-shadow: 0px -1px 5px 1px rgba(0, 0, 0, 0.2);
+
+}
+nav > ul > li:hover .fa-chevron-down{
+    display: none;
+
+}
+
+nav > ul > li:hover .ikon{
+    display: inline-block;
+
+    z-index: 99999;
+
+}
+
+nav > ul > li:first-child:hover .ikon{
+    display: inline-block;
+    margin-top: -8px;
+    height: 28px;
+    z-index: 9999;
+}
+
+.midbanner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+    /*border: 1px solid;*/
+}
+
+.bannerright img{
+    max-width: 100%;
+    width: 600px;
+    object-fit: cover;
+    
+}
+
+.bannerleft h1{
+    font-size: 40px;
+    letter-spacing: -2px;
+    padding-left: 30px;
+}
+
+.bannerleft p{
+    max-width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.button{
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:#834d9b;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 90px;
+    word-spacing: 0px;
+    cursor: pointer;
+}
+
+.uyeol{
+    background-color: white;
+    color: #834d9b;
+}
+
+.sepet{
+    background-color: black;
+    color: white;
+}
+
+.kesfet{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 120px;
+    background-color: #834d9b;
+    box-shadow: -5px 10px 10px 0px rgba(0, 0, 0, 0.184);
+    transition: all 0.2s;
+}
+
+.bannerleft button:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+/*-------------------card specs start----------------------------*/
+
+.allcards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px; 
+    /*border: 1px solid;*/
+}
+
+div[class^="card"]{
+    border: 1px solid rgba(131,77,155,0.5) ;
+    height: 500px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+div[class^="card"] img{
+    width: 90%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+div[class^="card"] h1{
+    color: #834d9b;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div[class^="card"] h6{
+    height: 80px;
+    font-weight: 500;
+    font-size: 10x;
+    margin-top: 10px;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+div[class^="card"] h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -10px;
+    overflow: hidden;
+}
+
+div[class^="card"] .buy{
+    height: 40px;
+    display: flex;
+    margin-top: -5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div[class^="card"] .add {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    background-color: white;
+    color: #834d9b;
+    font-size: 14px;
+    font-weight: bold;
+    border: #834d9b solid 2px;
+    transition: all 0.3s;
+}
+
+div[class^="card"] .detail, div[class^="card"] .fav{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    color: #834d9b;
+    border: #834d9b solid 2px;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: none;
+}
+
+div[class^="card"] .add:hover, div[class^="card"] .detail:hover, div[class^="card"] .fav:hover {
+    background-color: #834d9b;
+    color: white;
+}
+
+div[class^="card"]:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+div[class^="card"]:hover .detail, div[class^="card"]:hover .fav{
+    display: block; 
+}
+
+/*--------------card1 specs finish-----------------------*/
+
+/*--------------mega menu starts-------------------------*/
+
+.megamenu{
+    background-color: #f0dbdb;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 410px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: all 0.2s ease;
+    z-index: 2;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0px -1px 5px 1px rgba(0, 0, 0, 0.6);*/
+}
+
+nav > ul > li:hover .megamenu{
+    visibility: visible;
+    opacity: 1;
+    top: 140px;
+}
+
+.megamenuleft > ul{
+    padding-top: 20px;
+    width: 350px;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-right: rgba(0, 0, 0, 0.2) 1px solid;
+}
+
+.megamenuleft ul li{
+
+    line-height: 40px;
+    font-weight: 500;
+    color: #834d9b;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    text-align: left;
+    position: relative;  
+}
+
+.megamenuleft  ul  li  a{
+    display: block;
+    color: #834d9b;
+    padding: 0 40px;
+}
+
+.megamenuleft ul li a:hover{
+    background-color: #834d9b;
+    color: white ;
+    border-radius: 5px;
+}
+
+.fa-chevron-right{
+    float: right;
+    margin-top: 12px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.megamenumid{
+    position: absolute;
+    width: 320px;
+    text-align: left;
+    top: 0px;
+    left: 250px;
+    visibility: hidden;
+    opacity: 0 ;
+    transition: all 0.2s ease;
+    /*background-color: #834d9b;*/
+    /*display: none;*/
+    /*border:  1px solid;*/
+
+}
+
+.megamenuleft ul li:hover .megamenumid{
+    /*display: inline-block;*/
+    visibility: visible;
+    opacity: 1;
+    top: 0px;
+    left: 350px;
+
+}
+
+.megamenuright img{
+    height: 250px;
+    padding-right: 10px;
+    padding-top: 80px;
+
+}
+/*--------------mega menu Finishes--------------*/
+
+.imgfloat1 img{
+    position: absolute;
+    max-width: 100%;
+    width: 200px;
+    bottom: -50px;
+    left: -4%;
+    z-index: -1;
+}
+.imgfloat2 img{
+    position: absolute;
+    max-width: 100%;
+    width: 100px;
+    top: 30%;
+    right: -2%;
+    transform: rotate(80deg);
+
+}
+.imgfloat3 img{
+    position: absolute;
+    max-width: 100%;
+    width: 200px;
+    bottom: 0px;
+    right: -5%;
+    transform: rotate(-30deg);
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    /*border: 1px solid;*/
+    color: #834d9b;
+}
+
