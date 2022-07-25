@@ -1,5 +1,5 @@
 # html_css_only_projects1-Petshop
-This is a Petshop website Layout
+This is a Petshop website Layout with mega menu and dropdown menu
 # Used Techs
 Html & CSS
 
